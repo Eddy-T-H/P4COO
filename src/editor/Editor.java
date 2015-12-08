@@ -33,7 +33,7 @@ public class Editor {
 	protected TextArea textarea;
 	protected File file;
 	protected boolean saved;
-	protected static final String VERSION = "eXditor 1.0";
+	protected static final String VERSION = "P4COO";
 	protected final File dropins = new File("./dropins/plugins");
 	protected final PluginFinder finder = new PluginFinder(dropins);
 
