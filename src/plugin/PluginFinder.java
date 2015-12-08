@@ -14,7 +14,7 @@ import java.util.Set;
  */
 public class PluginFinder implements ActionListener {
 
-	private static final int REFRESH_INTERVAL_MS = 1000;
+	private static final int REFRESH_INTERVAL_MS = 3000;
 	protected final File directory;
 	protected final List<PluginEventListener> listeners = new ArrayList<PluginEventListener>();
 	protected final ConfigurableTimer timer;
