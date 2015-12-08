@@ -1,7 +1,3 @@
-/**
- * @author Nabil Maiz
- * @author Arnaud Cojez
- */
 package editor.component;
 
 import java.awt.event.ActionEvent;
@@ -17,9 +13,6 @@ import editor.Editor;
 
 /**
  * Class defining the Tools Menu
- * 
- * @author Nabil Maiz
- * @author Arnaud Cojez
  */
 public class ToolsMenu extends JMenu implements PluginEventListener {
 

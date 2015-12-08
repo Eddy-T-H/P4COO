@@ -1,9 +1,8 @@
 package editor;
 
 /**
- * @author Nabil Maiz
- * @author Arnaud Cojez
- */
+  * 
+  */
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -27,12 +26,9 @@ import editor.component.ToolsMenu;
 
 /**
  * Class defining the Editor
- * @author Nabil Maiz
- * @author Arnaud Cojez
  */
 public class Editor {
 
-	// Fields
 	protected JFrame frame;
 	protected TextArea textarea;
 	protected File file;
@@ -41,8 +37,6 @@ public class Editor {
 	protected final File dropins = new File("./dropins/plugins");
 	protected final PluginFinder finder = new PluginFinder(dropins);
 
-	// Methods
-	
 	/**
 	 * Constructor for the Editor class
 	 */

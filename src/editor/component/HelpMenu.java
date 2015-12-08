@@ -1,7 +1,3 @@
-/**
- * @author Nabil Maiz
- * @author Arnaud Cojez
- */
 package editor.component;
 
 import java.awt.event.ActionEvent;
@@ -17,18 +13,10 @@ import editor.Editor;
 
 /**
  * Class defining the Help Menu
- * 
- * @author Nabil Maiz
- * @author Arnaud Cojez
  */
 public class HelpMenu extends JMenu implements PluginEventListener {
-
-	// Fields
-
 	private static final long serialVersionUID = 1L;
 	private Editor editor;
-
-	// Methods
 
 	/**
 	 * Constructor for the HelpMenu class
@@ -41,11 +29,6 @@ public class HelpMenu extends JMenu implements PluginEventListener {
 		this.editor = editor;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see plugin.PluginEventListener#pluginAdded(plugin.PluginAddedEvent)
-	 */
 	@Override
 	public void pluginAdded(PluginAddedEvent plugin) {
 		JMenuItem menuItem = new JMenuItem(plugin.getLabel());
@@ -58,12 +41,8 @@ public class HelpMenu extends JMenu implements PluginEventListener {
 	 */
 	public class HelpListener implements ActionListener {
 
-		// Fields
-
 		private Editor editor;
 		private Plugin plugin;
-
-		// Methods
 
 		/**
 		 * Constructor for the HelpListener class
@@ -77,13 +56,6 @@ public class HelpMenu extends JMenu implements PluginEventListener {
 			this.plugin = plugin;
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * 
-		 * @see
-		 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent
-		 * )
-		 */
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			this.editor.confirm(this.plugin.getLabel(),

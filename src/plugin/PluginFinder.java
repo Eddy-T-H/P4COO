@@ -1,7 +1,3 @@
-/**
- * @author Maiz Nabil
- * @author Cojez Arnaud
- */
 package plugin;
 
 import java.awt.event.ActionEvent;
@@ -15,13 +11,8 @@ import java.util.Set;
 
 /**
  * Class used to Find the plugins
- * 
- * @author Maiz Nabil
- * @author Cojez Arnaud
  */
 public class PluginFinder implements ActionListener {
-
-	// Fields
 
 	private static final int REFRESH_INTERVAL_MS = 1000;
 	protected final File directory;
@@ -29,9 +20,7 @@ public class PluginFinder implements ActionListener {
 	protected final ConfigurableTimer timer;
 	protected Set<File> knownFiles = new HashSet<File>();
 	protected PluginFilter filter;
-
-	// Methods
-
+	
 	/**
 	 * Constructor for the PluginFinder class
 	 * 
@@ -44,12 +33,6 @@ public class PluginFinder implements ActionListener {
 		this.timer = new ConfigurableTimer(this);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
-	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		Set<File> currentFiles = this.listFiles();

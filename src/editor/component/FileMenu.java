@@ -1,7 +1,3 @@
-/**
- * @author Nabil Maiz
- * @author Arnaud Cojez
- */
 package editor.component;
 
 import java.awt.event.ActionEvent;
@@ -16,11 +12,8 @@ import javax.swing.JSeparator;
 import editor.Editor;
 
 /**
- * Class defining the File Menu
- * 
- * @author Nabil Maiz
- * @author Arnaud Cojez
- */
+  * Class defining the File Menu
+  */
 public class FileMenu extends JMenu {
 
 	// Fields

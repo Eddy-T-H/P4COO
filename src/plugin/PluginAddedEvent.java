@@ -6,18 +6,10 @@ import plugin.Plugin;
 
 /**
  * Class used to launch an event where a plugin is added
- * 
- * @author Nabil Maiz
- * @author Arnaud Cojez
  */
 public class PluginAddedEvent implements Plugin {
-
-	// Fields
-
 	private File file;
 	protected Plugin instance;
-
-	// Methods
 
 	/**
 	 * Constructor for the PluginAddedEvent class

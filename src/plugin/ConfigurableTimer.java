@@ -1,8 +1,3 @@
-/**
- * @author Nabil Maiz
- * @author Cojez Arnaud
- */
-
 package plugin;
 
 import java.awt.event.ActionEvent;
@@ -12,19 +7,12 @@ import javax.swing.Timer;
 
 /**
  * Class used to trigger an Action every given millisecond
- * 
- * @author Nabil Maiz
- * @author Cojez Arnaud
  */
 public class ConfigurableTimer implements java.awt.event.ActionListener {
-
-	// Fields
 
 	protected final int maxIteration;
 	protected int nbIterations;
 	protected final ActionListener listener;
-
-	// Methods
 
 	/**
 	 * Constructor for the ConfigurableTimer class
@@ -68,12 +56,6 @@ public class ConfigurableTimer implements java.awt.event.ActionListener {
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
-	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		nbIterations++;

@@ -1,8 +1,3 @@
-/**
- * @author Nabil Maiz
- * @author Arnaud Cojez
- */
-
 package editor.component;
 
 import java.io.BufferedReader;
@@ -21,18 +16,10 @@ import editor.Editor;
 
 /**
  * Class defining the Text Area
- * 
- * @author Nabil Maiz
- * @author Arnaud Cojez
  */
 public class TextArea extends JTextArea {
-
-	// Fields
-
 	private static final long serialVersionUID = 1L;
 	private Editor editor;
-
-	// Methods
 
 	/**
 	 * Constructor for the TextArea class
@@ -92,12 +79,7 @@ public class TextArea extends JTextArea {
 	 */
 	public class ChangedDocumentListener implements DocumentListener {
 
-		// Fields
-
 		private Editor editor;
-
-		// Methods
-
 		/**
 		 * Constructor for the ChangedDocumentListener class
 		 * 
@@ -108,29 +90,17 @@ public class TextArea extends JTextArea {
 			this.editor = editor;
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * @see javax.swing.event.DocumentListener#changedUpdate(javax.swing.event.DocumentEvent)
-		 */
 		@Override
 		public void changedUpdate(DocumentEvent arg0) {
 			this.editor.setNotSaved();
 
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * @see javax.swing.event.DocumentListener#insertUpdate(javax.swing.event.DocumentEvent)
-		 */
 		@Override
 		public void insertUpdate(DocumentEvent arg0) {
 			this.editor.setNotSaved();
 		}
 
-		/*
-		 * (non-Javadoc)
-		 * @see javax.swing.event.DocumentListener#removeUpdate(javax.swing.event.DocumentEvent)
-		 */
 		@Override
 		public void removeUpdate(DocumentEvent arg0) {
 			this.editor.setNotSaved();

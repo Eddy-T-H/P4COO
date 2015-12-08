@@ -1,7 +1,3 @@
-/**
- * @author Maiz Nabil
- * @author Cojez Arnaud
- */
 package plugin;
 
 import java.io.File;
@@ -10,15 +6,9 @@ import java.lang.reflect.Constructor;
 
 /**
  * Class used to say whether a plugin is acceptable or not
- * 
- * @author Maiz Nabil
- * @author Cojez Arnaud
  */
 public class PluginFilter implements FilenameFilter {
 
-	/*
-	 * @see java.io.FilenameFilter#accept(java.io.File, java.lang.String)
-	 */
 	@Override
 	public boolean accept(File dir, String name) {
 		if (!fileExtensionIsClass(name)) {

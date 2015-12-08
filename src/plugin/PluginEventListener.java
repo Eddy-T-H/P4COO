@@ -1,16 +1,9 @@
-/**
- * @author Maiz Nabil
- * @author Cojez Arnaud
- */
 package plugin;
 
 import java.util.EventListener;
 
 /**
  * Interface extending EventListener to the plugins
- * 
- * @author Maiz Nabil
- * @author Cojez Arnaud
  */
 public interface PluginEventListener extends EventListener {
 
