@@ -8,8 +8,7 @@ import javax.swing.Timer;
 /**
  * Class used to trigger an action every given milliseconds
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
 public class ConfigurableTimer implements ActionListener{
 	

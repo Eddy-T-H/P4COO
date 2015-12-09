@@ -12,8 +12,7 @@ import editor.Editor;
 /**
  * Class defining the File Menu
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
 public class FileMenu extends JMenu {
 

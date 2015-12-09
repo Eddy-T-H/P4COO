@@ -12,12 +12,10 @@ import java.util.Set;
 /**
  * Class used to  find the plugins
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
 public class PluginFinder implements ActionListener{
 	
-	// Fields
 	
 	private final int REFRESHING_INTERVAL = 1000;
 	protected final File dir;
@@ -26,7 +24,6 @@ public class PluginFinder implements ActionListener{
 	protected PluginFilter filter;
 	protected Set<File> knownFiles = new HashSet<File>();
 	
-	// Methods
 	
 	/**
 	 * Constructor for the 

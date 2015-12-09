@@ -17,8 +17,7 @@ import editor.Editor;
 /**
  * Class defining the Text Area
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
 public class TextArea extends JTextArea implements DocumentListener {
 	

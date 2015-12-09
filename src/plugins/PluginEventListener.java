@@ -7,8 +7,7 @@ import plugins.PluginAddedEvent;
 /**
  * Interface extending EventListener to the plugin
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
 public interface PluginEventListener extends EventListener{
 

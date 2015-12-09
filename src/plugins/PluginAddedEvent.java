@@ -8,8 +8,7 @@ import java.net.URLClassLoader;
 /**
  * Class used to launch an event where a plugin is added
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
 public class PluginAddedEvent implements Plugin {
 

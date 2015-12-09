@@ -17,55 +17,53 @@ import editor.component.FileMenu;
 import editor.component.HelpMenu;
 import editor.component.TextArea;
 import editor.component.ToolsMenu;
-import plugins.AddedPluginsLogger;
+import plugins.PluginAddedLogger;
 import plugins.PluginFinder;
 
 @SuppressWarnings("serial")
 public class Editor extends JFrame {
 	
-	// Fields
 
 	protected TextArea textArea;
 	protected File file;
 	protected boolean saved;
-	protected static final String TITLE = "Extendable Editor";
+	protected static final String TITLE = "td9plugins";
 	protected final File dropins = new File("dropins/plugins");
 	protected final PluginFinder finder = new PluginFinder(dropins);
-	protected AddedPluginsLogger apl = new AddedPluginsLogger();
+	protected PluginAddedLogger apl = new PluginAddedLogger();
 	
-	// Methods
 
 	/**
-	 * Constructor for the Editor class
+	 * builder for the Editor class
 	 */
 	public Editor() {
 		
-		/* Menu Bar */
+		/* Menubar */
 		JMenuBar menuBar = new JMenuBar();		
 		this.setJMenuBar(menuBar);
 		
-		/* Menu File */
+		/* Menufile */
 		FileMenu fileMenu = new FileMenu(this);
 		menuBar.add(fileMenu);
 		
-		/* Menu Tools */
+		/* Menutools */
 		ToolsMenu tools = new ToolsMenu(this);
 		this.finder.addListener(tools);
 		menuBar.add(tools);
 		
-		/* Menu Help */
+		/* Menuhelp */
 		HelpMenu help = new HelpMenu(this);
 		this.finder.addListener(help);
 		menuBar.add(help);
 
-		/* Text Area */
+		/* Textarea */
 		this.textArea = new TextArea(this);
 		JScrollPane scroll = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);		
 		this.add(scroll);
 		
-		this.setSize(800, 600);
+
+		this.setSize(1000, 400);
 		this.setLocationRelativeTo(null);
-		this.setTitle("Extendable Editor");
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setVisible(true);
 		
@@ -79,7 +77,7 @@ public class Editor extends JFrame {
 	}
 	
 	/**
-	 * Updates the title of the frame
+	 * Changes the title of the frame when modified
 	 */
 	public void updateTitle() {
 		String tmp = "";
@@ -94,7 +92,7 @@ public class Editor extends JFrame {
 	}
 	
 	/**
-	 * Resets the editor to write on a new document
+	 * Resets to write on a new document
 	 */
 	public void reset() {
 		this.textArea.setText(null);

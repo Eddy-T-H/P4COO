@@ -14,8 +14,7 @@ import plugins.PluginEventListener;
 /**
  * Class defining the Help Menu
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
 public class HelpMenu extends JMenu implements PluginEventListener {
 	

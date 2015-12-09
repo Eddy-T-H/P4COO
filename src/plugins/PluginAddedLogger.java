@@ -3,17 +3,16 @@ package plugins;
 /**
  * Class used to log when a plugin is added
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
-public class AddedPluginsLogger implements PluginEventListener {
+public class PluginAddedLogger implements PluginEventListener {
 
 	/**
 	 * @see PluginEventListener#pluginAdded(PluginAddedEvent)
 	 */
 	@Override
 	public void pluginAdded(PluginAddedEvent listener) {
-		System.out.println(listener.getFile() + " plugin successfully added");
+		System.out.println(listener.getFile() + " plugin loaded");
 	}
 
 }

@@ -11,8 +11,7 @@ import java.net.URLClassLoader;
 /**
  * Class used to determine if a plugin is acceptable or not
  * 
- * @author Maxime Opsommer
- * @author Damien Toulouse
+ * @author E Thockler, A Blondin, H Chaumette
  */
 public class PluginFilter implements FilenameFilter {
 
